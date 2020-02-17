@@ -1,7 +1,5 @@
-import getopt
 import sys
-
-from src.MemeGeneratorInteractor import save_meme_to_disk
+from src.MemeGenerator import save_meme_to_disk
 
 
 def h():
@@ -16,13 +14,13 @@ def main(args):
     if len(args) <= 2:
         h()
     try:
-        template = args[0]
         path = args[1]
+        template = args[0]
         save_meme_to_disk(template, path, args[2:])
     except ValueError as e:
         print(str(e))
         h()
-    except FileNotFoundError as e:
+    except FileNotFoundError:
         print("No such directory: " + path)
 
 if __name__ == "__main__":

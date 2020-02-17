@@ -2,34 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2acbf5c4-7f2d-420d-beb1-9edc846a2e1d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FontLibrary/BLKCHCRY.TTF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageLibrary/balloon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageLibrary/classnote.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageLibrary/classy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageLibrary/cola.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageLibrary/firstword.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageLibrary/headache.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageLibrary/itsretarded.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageLibrary/itstime.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageLibrary/loud.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageLibrary/mealsome.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageLibrary/nutbutton.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageLibrary/pills.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageLibrary/swuuok.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/MemePy.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/__main__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/setup.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MemeGenerator.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MemeGeneratorInteractor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MemeLib.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MemeModel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/MemeLibrary/builtin.JSON" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/MemeLibrary/extension.JSON" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/definitions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MemeLibJsonDecoder.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ImageLibrary/firstword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MemeLib.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/__init__.py" afterPath="$PROJECT_DIR$/src/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FontLibrary/BLKCHCRY.TTF" afterPath="$PROJECT_DIR$/Resources/FontLibrary/BLKCHCRY.TTF" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/balloon.jpg" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/balloon.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/classnote.png" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/classnote.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/classy.jpg" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/classy.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/cola.jpg" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/cola.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/headache.png" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/headache.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/itsretarded.png" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/itsretarded.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/itstime.png" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/itstime.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/loud.jpg" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/loud.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/mealsome.png" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/mealsome.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/nutbutton.jpg" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/nutbutton.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/pills.jpg" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/pills.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/swuuok.png" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/swuuok.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MemeGenerator.py" afterPath="$PROJECT_DIR$/src/MemeFactory.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MemeGeneratorInteractor.py" afterPath="$PROJECT_DIR$/src/MemeGenerator.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,14 +36,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MemeGenerator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MemeGenerator.py">
+      <file leaf-file-name="MemeFactory.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MemeFactory.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="75" column="33" lean-forward="true" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
+            <state relative-caret-position="510">
+              <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1581963703767" expanded="true" signature="1746:2460" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MemeGenerator.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MemeGenerator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,40 +63,8 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="42" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MemeGeneratorInteractor.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MemeGeneratorInteractor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="28" lean-forward="true" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__main__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/__main__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="323">
+              <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -97,24 +72,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="MemeLibJsonDecoder.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MemeLibJsonDecoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+            <state relative-caret-position="255">
+              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extension.JSON" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/MemeLibrary/extension.JSON">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MemeLib.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MemeLib.py">
+      <file leaf-file-name="definitions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/definitions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="144" column="17" lean-forward="true" selection-start-line="144" selection-start-column="17" selection-end-line="144" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="builtin.JSON" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/MemeLibrary/builtin.JSON">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="158" column="35" lean-forward="true" selection-start-line="158" selection-start-column="35" selection-end-line="158" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="43" column="70" lean-forward="true" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,10 +149,25 @@
       <find>lower</find>
       <find>print(</find>
       <find>mememaker</find>
+      <find>comic</find>
+      <find>arial</find>
+      <find>source[opt]</find>
+      <find>Hind-Regular</find>
+      <find>MemeImages</find>
+      <find>regular</find>
+      <find>image_file_name</find>
+      <find>filenotf</find>
+      <find>.image</find>
     </findStrings>
     <replaceStrings>
       <replace>args</replace>
+      <replace>Hind-regular</replace>
+      <replace>a</replace>
+      <replace>Regular</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>D:\Projects\python\MemePy\Resources\FontLibrary</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -162,22 +182,27 @@
         <option value="$PROJECT_DIR$/MemeLib.py" />
         <option value="$PROJECT_DIR$/MemeGenerator.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/MemePy/__init__.py" />
         <option value="$PROJECT_DIR$/MemePy/__main__.py" />
         <option value="$PROJECT_DIR$/MemePy/MemeGenerator.py" />
-        <option value="$PROJECT_DIR$/src/MemeLib.py" />
         <option value="$PROJECT_DIR$/__main__.py" />
-        <option value="$PROJECT_DIR$/src/MemeGenerator.py" />
+        <option value="$PROJECT_DIR$/Resources/MemeLibrary/extensions.JSON" />
+        <option value="$PROJECT_DIR$/Resources/MemeLibrary/builtin.JSON" />
+        <option value="$PROJECT_DIR$/src/MemeLib.py" />
+        <option value="$PROJECT_DIR$/definitions.py" />
+        <option value="$PROJECT_DIR$/src/MemeLibJsonDecoder.py" />
         <option value="$PROJECT_DIR$/src/MemeGeneratorInteractor.py" />
         <option value="$PROJECT_DIR$/src/__init__.py" />
+        <option value="$PROJECT_DIR$/src/MemeFactory.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/MemeGenerator.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="96" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-42" />
+    <option name="y" value="-23" />
     <option name="width" value="1936" />
     <option name="height" value="1016" />
   </component>
@@ -206,11 +231,6 @@
               <item name="MemePy" type="b2602c69:ProjectViewProjectNode" />
               <item name="MemePy" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MemePy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MemePy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -221,6 +241,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\python\MemePy\Resources" />
       <recent name="D:\Projects\python\MemePy" />
       <recent name="D:\Projects\python\MemePy\MemePy" />
     </key>
@@ -251,7 +272,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13859275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -290,39 +311,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MemeModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MemeLib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="144" column="17" lean-forward="true" selection-start-line="144" selection-start-column="17" selection-end-line="144" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/__main__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -334,32 +329,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MemeGenerator.py">
+    <entry file="file://$PROJECT_DIR$/src/MemeLib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="75" column="33" lean-forward="true" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1581963703767" expanded="true" signature="1746:2460" ph="..." />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MemeModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="42" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        <state relative-caret-position="323">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/MemeLibrary/extension.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MemeLibJsonDecoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MemeFactory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MemeGeneratorInteractor.py">
+    <entry file="file://$PROJECT_DIR$/definitions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        <state relative-caret-position="68">
+          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/MemeLibrary/builtin.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="158" column="35" lean-forward="true" selection-start-line="158" selection-start-column="35" selection-end-line="158" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="43" column="70" lean-forward="true" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MemeGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
