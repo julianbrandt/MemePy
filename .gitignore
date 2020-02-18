@@ -129,10 +129,4 @@ dmypy.json
 .pyre/
 
 # Jetbrains
-Hydrobot3/.idea
-
-# Authentication token
-Hydrobot3/token.txt
-
-# PyDictionary
-Hydrobot3/PyDictionary/
+.idea
