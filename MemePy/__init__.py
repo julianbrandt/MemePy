@@ -10,11 +10,10 @@ def h():
 
 
 def main(args):
-    if args.__contains__("MemePy"):
-        args.remove("MemePy")
     if len(args) <= 2:
         h()
     try:
+        args = args[1:]
         path = args[1]
         template = args[0]
         save_meme_to_disk(template, path, args[2:])

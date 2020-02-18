@@ -1,8 +1,9 @@
 import json
 
 from PIL import ImageFont
+
 from MemePy.MemeModel import TextZone, MemeImage
-from definitions import RESOURCE_DIR
+from MemePy.definitions import RESOURCE_DIR
 
 
 def parse_memelib_json(source):
