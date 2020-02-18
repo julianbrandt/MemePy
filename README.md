@@ -43,6 +43,6 @@ MemePy <path> <template> <*args> <*options>
 
 - **template** is the underlying template to use for the meme.
 
-- **\*args ** are all arguments to be placed onto the template (either texts or images).
+- __\*args __ are all arguments to be placed onto the template (either texts or images).
 
-- **\*options** are the options that modify behavior of the generation
+- __\*options__ are the options that modify behavior of the generation.
