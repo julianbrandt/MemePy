@@ -13,6 +13,10 @@ setuptools.setup(
     author_email='julianbrrandt@gmail.com',
     url="https://github.com/julianbrandt/MemePy",
     packages=setuptools.find_packages(),
+    install_requires=[
+        "pillow",
+        "requests"
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
