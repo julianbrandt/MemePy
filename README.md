@@ -1,5 +1,6 @@
 # MemePy
 *Meme generator library for your everyday needs*
+
 Python meme generator originally made for the discord-chat-bot [HydroBot](https://github.com/julianbrandt/Hydrobot3), but migrated to its own package for increased modularity and ease of use.
 
 ## How it works
@@ -38,7 +39,10 @@ Using the command-line, you can generate images from templates and save them to 
 MemePy <path> <template> <*args> <*options>
 ```
 
-* **path** is where on your computer you want to save the meme.
-* **template** is the underlying template to use for the meme.
-* **\*args ** are all arguments to be placed onto the template (either texts or images).
-* **\*options** are the options that modify behavior of the generation
+- **path** is where on your computer you want to save the meme.
+
+- **template** is the underlying template to use for the meme.
+
+- **\*args ** are all arguments to be placed onto the template (either texts or images).
+
+- **\*options** are the options that modify behavior of the generation
