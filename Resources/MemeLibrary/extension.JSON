@@ -1,21 +1,2 @@
 {
-  "SwuUok": {
-    "filename": "swuuok.png",
-    "text_zones": [
-      {
-        "pos": [20, 22],
-        "dimensions": [220, 220],
-        "font": "Hind-regular.ttf",
-        "font_size": 36,
-        "centering": ["True", "True"]
-      },
-      {
-        "pos": [20, 285],
-        "dimensions": [220, 220],
-        "font": "Hind-regular.ttf",
-        "font_size": 36,
-        "centering": ["True", "True"]
-      }
-    ]
-  }
 }
