@@ -39,9 +39,9 @@ Using the command-line, you can generate images from templates and save them to 
 MemePy <path> <template> <*args> <*options>
 ```
 
-- **path** is where on your computer you want to save the meme.
+- __path__ is where on your computer you want to save the meme.
 
-- **template** is the underlying template to use for the meme.
+- __template__ is the underlying template to use for the meme.
 
 - __\*args __ are all arguments to be placed onto the template (either texts or images).
 
