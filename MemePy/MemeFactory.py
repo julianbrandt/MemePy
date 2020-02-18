@@ -3,11 +3,11 @@ from enum import Enum
 from io import BytesIO
 
 import requests
-from src.MemeModel import MemeImage
-from src.MemeLibJsonDecoder import generate_meme_dict
 from PIL import Image, ImageDraw
-from definitions import RESOURCE_DIR
+from MemePy.MemeModel import MemeImage
 
+from MemePy.MemeLibJsonDecoder import generate_meme_dict
+from definitions import RESOURCE_DIR
 
 MemeLib = generate_meme_dict()
 

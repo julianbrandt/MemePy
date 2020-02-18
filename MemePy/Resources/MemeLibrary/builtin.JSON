@@ -5,13 +5,13 @@
       {
         "pos": [60, 0],
         "dimensions": [400, 95],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 24
       },
       {
         "pos": [120, 100],
         "dimensions": [350, 100],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 24
       }
     ]
@@ -22,7 +22,7 @@
       {
         "pos": [253, 3],
         "dimensions": [220, 90],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 20,
         "centering": ["False", "True"]
       }
@@ -46,14 +46,14 @@
       {
         "pos": [60, 50],
         "dimensions": [200, 150],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 36,
         "centering": ["True", "True"]
       },
       {
       "pos": [95, 380],
         "dimensions": [110, 75],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 24,
         "centering": ["True", "True"]
       }
@@ -65,7 +65,7 @@
       {
         "pos": [585, 545],
         "dimensions": [175, 140],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 24,
         "angle": 30,
         "centering": ["True", "True"]
@@ -78,7 +78,7 @@
       {
         "pos": [133, 300],
         "dimensions": [175, 100],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 56,
         "angle": 10,
         "centering": ["False", "True"]
@@ -91,7 +91,7 @@
       {
         "pos": [235, 290],
         "dimensions": [230, 40],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 20,
         "centering": ["True", "False"]
       }
@@ -103,21 +103,21 @@
       {
         "pos": [30, 300],
         "dimensions": [200, 200],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 40,
         "centering": ["True", "True"]
       },
       {
         "pos": [470, 100],
         "dimensions": [300, 250],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 40,
         "centering": ["True", "True"]
       },
       {
         "pos": [10, 750],
         "dimensions": [200, 250],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 40,
         "centering": ["True", "True"]
       }
@@ -129,7 +129,7 @@
       {
         "pos": [310, 20],
         "dimensions": [370, 210],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 40,
         "centering": ["True", "True"]
       },
@@ -148,7 +148,7 @@
       {
         "pos": [180, 425],
         "dimensions": [200, 200],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 36,
         "centering": ["True", "True"],
         "text_color": [255, 255, 255]
@@ -156,7 +156,7 @@
       {
         "pos": [600, 350],
         "dimensions": [180, 100],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 36,
         "angle": 30,
         "centering": ["True", "True"]
@@ -169,14 +169,14 @@
       {
         "pos": [850, 600],
         "dimensions": [200, 200],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 36,
         "centering": ["True", "False"]
       },
       {
         "pos": [860, 800],
         "dimensions": [200, 200],
-        "font": "Hind-Regular.ttf",
+        "font": "arial.ttf",
         "font_size": 36,
         "centering": ["True", "False"],
         "optional": "True"

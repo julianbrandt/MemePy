@@ -1,4 +1,5 @@
-import src
 import sys
 
-src.main(sys.argv)
+import MemePy
+
+MemePy.main(sys.argv)

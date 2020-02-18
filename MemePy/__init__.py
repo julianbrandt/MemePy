@@ -1,5 +1,6 @@
 import sys
-from src.MemeGenerator import save_meme_to_disk
+
+from MemePy.MemeGenerator import save_meme_to_disk
 
 
 def h():

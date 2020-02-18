@@ -1,8 +1,9 @@
 import json
-from src.MemeFactory import MemeImage
-from src.MemeModel import TextZone
+
 from PIL import ImageFont
+from MemePy.MemeModel import TextZone, MemeImage
 from definitions import RESOURCE_DIR
+
 
 def parse_memelib_json(source):
     memes = {}
@@ -54,8 +55,8 @@ def json_to_dict(files):
 
 def generate_meme_dict():
     files = [
-        RESOURCE_DIR + "/MemeLibrary/builtin.JSON",
-        RESOURCE_DIR + "/MemeLibrary/extension.JSON"
+        RESOURCE_DIR + "\MemeLibrary\\builtin.JSON",
+        RESOURCE_DIR + "\MemeLibrary\extension.JSON"
     ]
     return parse_memelib_json(json_to_dict(files))
 

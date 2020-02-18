@@ -1,5 +1,6 @@
-from src.MemeFactory import MemeFactory
 from io import BytesIO
+
+from MemePy.MemeFactory import MemeFactory
 
 
 def get_meme_factory(template, args):
