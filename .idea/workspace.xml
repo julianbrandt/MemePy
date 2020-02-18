@@ -2,7 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2acbf5c4-7f2d-420d-beb1-9edc846a2e1d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/MemeLibrary/extension.JSON" afterPath="$PROJECT_DIR$/Resources/MemeLibrary/extension.JSON" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/MemeLibrary/builtin.JSON" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/MemeLibrary/extension.JSON" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/definitions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MemeLibJsonDecoder.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ImageLibrary/firstword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MemeLib.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/__init__.py" afterPath="$PROJECT_DIR$/src/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FontLibrary/BLKCHCRY.TTF" afterPath="$PROJECT_DIR$/Resources/FontLibrary/BLKCHCRY.TTF" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/balloon.jpg" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/balloon.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/classnote.png" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/classnote.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/classy.jpg" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/classy.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/cola.jpg" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/cola.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/headache.png" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/headache.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/itsretarded.png" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/itsretarded.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/itstime.png" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/itstime.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/loud.jpg" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/loud.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/mealsome.png" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/mealsome.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/nutbutton.jpg" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/nutbutton.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/pills.jpg" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/pills.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageLibrary/swuuok.png" afterPath="$PROJECT_DIR$/Resources/ImageLibrary/swuuok.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MemeGenerator.py" afterPath="$PROJECT_DIR$/src/MemeFactory.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MemeGeneratorInteractor.py" afterPath="$PROJECT_DIR$/src/MemeGenerator.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MemeGenerator.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MemeGenerator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MemeGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -61,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extension.JSON" pinned="false" current-in-tab="true">
+      <file leaf-file-name="extension.JSON" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Resources/MemeLibrary/extension.JSON">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+            <state relative-caret-position="0">
+              <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -174,11 +197,10 @@
         <option value="$PROJECT_DIR$/src/MemeFactory.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/MemeGenerator.py" />
-        <option value="$PROJECT_DIR$/Resources/MemeLibrary/extension.JSON" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-42" />
     <option name="y" value="-23" />
     <option name="width" value="1936" />
@@ -250,7 +272,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13859275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -333,6 +355,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/MemeLibrary/extension.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MemeLibJsonDecoder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -379,19 +409,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MemeGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/MemeLibrary/extension.JSON">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
