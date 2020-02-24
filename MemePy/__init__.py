@@ -16,7 +16,6 @@ def main(args):
         args = args[1:]
         template = args[0]
         path = args[1]
-        add_external_resource_dir("C:/users/julia/desktop/resources")
         save_meme_to_disk(template, path, args[2:])
     except ValueError as e:
         print(str(e))
