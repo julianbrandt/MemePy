@@ -16,18 +16,45 @@ The available meme templates can be found in the [Image Library](Resources/Image
 ## Usage
 ### Importing MemePy into your own project
 
-If you wish to import the meme-generation functionality into your own project, usually all you will need can be found in [src.MemeGenerator.py](src/MemeGenerator.py). 
+If you wish to import the meme-generation functionality into your own project, usually all you will need can be found in [MemePy/MemeGenerator.py](MemePy/MemeGenerator.py). 
 
 #### The functions available in this file are:
 
 * `save_meme_to_disk(template, path, args)`
+  
   * Generates a meme of the given template, with given args and saves it to disk at the given path.
+  
 * `get_meme_image(template, args)`
+  
   * Generates a meme of the given template, with given args and returns it as a `PIL`Image object. Used if you wanna pass an image to your own project instead of saving it.
+  
 * `get_meme_image_bytes(template, args)`
+  
   * Generates a meme of the given template, with given args and returns it as a BytesIO object. This allows for treating the output image as a file, and thus making it possible to open as other objects (e.g. `discord.py File` objects).
+  
 * `get_meme_factory(template, args)`
+  
   * Generates a meme factory with the given template and args. This exposes more of the specifications of the factory, in case you need more rich details.
+  
+* `add_external_resource_dir(resource_path)`
+
+  * Allows you to add your own external resource library without having access to the package's internal resource directory. The given resource directory *HAS* to follow the following rules for resource directories:
+
+    ```
+    <resources>
+    +---FontLibrary
+    |       <font>.ttf
+    |
+    +---ImageLibrary
+    |       <image>.png
+    |
+    \---MemeLibrary
+            <meme-definition>.JSON
+    ```
+
+    In other words. The folders inside the given directory *MUST* be named **FontLibrary**, **ImageLibrary** and **MemeLibrary**. The font you choose to use in your extension can be left out of the fonts directory, if it already exists internally in the package resources.
+
+
 
 ## Creating memes on the Command-Line
 

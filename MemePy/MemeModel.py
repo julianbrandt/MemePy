@@ -9,8 +9,8 @@ class TextZone:
         self.optional = optional
 
 class MemeImage:
-    def __init__(self, image_file_name, text_zones):
-        self.image_file_name = image_file_name
+    def __init__(self, image_file_path, text_zones):
+        self.image_file_path = image_file_path
         self.text_zones = text_zones
 
     def count_non_optional(self):

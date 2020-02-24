@@ -1,6 +1,6 @@
 import sys
 
-from MemePy.MemeGenerator import save_meme_to_disk
+from .MemeGenerator import save_meme_to_disk, add_external_resource_dir
 
 
 def h():
@@ -14,14 +14,12 @@ def main(args):
         h()
     try:
         args = args[1:]
-        path = args[1]
         template = args[0]
+        path = args[1]
+        add_external_resource_dir("C:/users/julia/desktop/resources")
         save_meme_to_disk(template, path, args[2:])
     except ValueError as e:
         print(str(e))
         h()
     except FileNotFoundError:
         print("No such directory: " + path)
-
-if __name__ == "__main__":
-    main(sys.argv)

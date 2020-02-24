@@ -5,11 +5,10 @@ from io import BytesIO
 import requests
 from PIL import Image, ImageDraw
 
-from MemePy.MemeLibJsonDecoder import generate_meme_dict
-from MemePy.MemeModel import MemeImage
-from MemePy.definitions import RESOURCE_DIR
+from .MemeLibJsonDecoder import generate_standard_meme_dict
+from .MemeModel import MemeImage
 
-MemeLib = generate_meme_dict()
+MemeLib = generate_standard_meme_dict()
 
 def split_line(text, font, width):
     if len(text) > 200:
@@ -66,7 +65,7 @@ class MemeFactory:
     def __init__(self, meme_image:MemeImage, args):
         self.extract_options(args)
         self.meme_image = meme_image
-        self.output_image = Image.open(RESOURCE_DIR + "/ImageLibrary/" + meme_image.image_file_name)
+        self.output_image = Image.open(meme_image.image_file_path)
         self.initial_dimensions = self.output_image.size
         if len(self.texts) < meme_image.count_non_optional():
             error_message = "Invalid arguments: Expected " + str(len(meme_image.text_zones)) + " arguments, but received " + str(len(self.texts)) + "."

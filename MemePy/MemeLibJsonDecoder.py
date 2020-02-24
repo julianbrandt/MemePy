@@ -1,34 +1,44 @@
-import json
+import json, os
 
 from PIL import ImageFont
 
-from MemePy.MemeModel import TextZone, MemeImage
-from MemePy.definitions import RESOURCE_DIR
+from .MemeModel import TextZone, MemeImage
+from .definitions import RESOURCE_DIR
 
 
-def parse_memelib_json(source):
+def parse_memelib_json(source, resource_path):
     memes = {}
     for meme in source:
-        memes[meme] = parse_meme_image_json(source[meme])
+        memes[meme] = parse_meme_image_json(source[meme], resource_path)
     return memes
 
-def parse_meme_image_json(source):
+def parse_meme_image_json(source, resource_path):
     meme_image = MemeImage(None, None)
     for k in source:
         if k == "filename":
-            meme_image.image_file_name = source[k]
+            meme_image.image_file_path = resource_path + "\ImageLibrary\\" + source[k]
         elif k == "text_zones":
             text_zones = []
             for i in source[k]:
-                text_zones.append(parse_text_zone_json(i))
+                text_zones.append(parse_text_zone_json(i, resource_path))
             meme_image.text_zones = text_zones
     return meme_image
 
-def parse_text_zone_json(source):
+def parse_text_zone_json(source, resource_path):
+    found_font = False
+    for file in os.listdir(resource_path + "\FontLibrary"):
+        if file == source["font"]:
+            found_font = True
+
+    if found_font:
+        font = ImageFont.truetype(resource_path + "\FontLibrary\\" + source["font"], int(source["font_size"]))
+    else:
+        font = ImageFont.truetype(RESOURCE_DIR + "\FontLibrary\\" + source["font"], int(source["font_size"]))
+
     zone = TextZone(
         (int(source["pos"][0]), int(source["pos"][1])),
         (int(source["dimensions"][0]), int(source["dimensions"][1])),
-        ImageFont.truetype(RESOURCE_DIR + "/FontLibrary/" + source["font"], int(source["font_size"]))
+        font
     )
     for opt in source:
         a = source[opt]
@@ -43,23 +53,28 @@ def parse_text_zone_json(source):
     return zone
 
 
-def json_to_dict(files):
+def json_to_dict(files, resource_path):
     output = {}
     for f in files:
-        file = open(f, "r")
+        file = open(resource_path + "\MemeLibrary\\" + f, "r")
         data = json.loads(file.read())
         file.close()
         for k in data:
             output[k] = data[k]
+        file.close()
     return output
 
 
-def generate_meme_dict():
-    files = [
-        RESOURCE_DIR + "\MemeLibrary\\builtin.JSON",
-        RESOURCE_DIR + "\MemeLibrary\extension.JSON"
-    ]
-    return parse_memelib_json(json_to_dict(files))
+def generate_meme_dict(resource_path):
+    files = []
+    for file in os.listdir(resource_path + "\MemeLibrary"):
+        if file.endswith(".JSON"):
+            files.append(file)
+    return parse_memelib_json(json_to_dict(files, resource_path), resource_path)
+
+
+def generate_standard_meme_dict():
+    return generate_meme_dict(RESOURCE_DIR)
 
 
 def str2bool(string):
