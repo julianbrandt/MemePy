@@ -136,7 +136,7 @@
       {
         "pos": [310, 270],
         "dimensions": [370, 210],
-        "font": "BLKCHCRY.ttf",
+        "font": "BLKCHCRY.TTF",
         "font_size": 45,
         "centering": ["True", "True"]
       }

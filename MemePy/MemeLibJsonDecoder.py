@@ -16,7 +16,7 @@ def parse_meme_image_json(source, resource_path):
     meme_image = MemeImage(None, None)
     for k in source:
         if k == "filename":
-            meme_image.image_file_path = resource_path + "\ImageLibrary\\" + source[k]
+            meme_image.image_file_path = resource_path + "/ImageLibrary/" + source[k]
         elif k == "text_zones":
             text_zones = []
             for i in source[k]:
@@ -26,14 +26,14 @@ def parse_meme_image_json(source, resource_path):
 
 def parse_text_zone_json(source, resource_path):
     found_font = False
-    for file in os.listdir(resource_path + "\FontLibrary"):
+    for file in os.listdir(resource_path + "/FontLibrary"):
         if file == source["font"]:
             found_font = True
 
     if found_font:
-        font = ImageFont.truetype(resource_path + "\FontLibrary\\" + source["font"], int(source["font_size"]))
+        font = ImageFont.truetype(resource_path + "/FontLibrary/" + source["font"], int(source["font_size"]))
     else:
-        font = ImageFont.truetype(RESOURCE_DIR + "\FontLibrary\\" + source["font"], int(source["font_size"]))
+        font = ImageFont.truetype(RESOURCE_DIR + "/FontLibrary/" + source["font"], int(source["font_size"]))
 
     zone = TextZone(
         (int(source["pos"][0]), int(source["pos"][1])),
@@ -56,7 +56,7 @@ def parse_text_zone_json(source, resource_path):
 def json_to_dict(files, resource_path):
     output = {}
     for f in files:
-        file = open(resource_path + "\MemeLibrary\\" + f, "r")
+        file = open(resource_path + "/MemeLibrary/" + f, "r")
         data = json.loads(file.read())
         file.close()
         for k in data:
@@ -67,7 +67,7 @@ def json_to_dict(files, resource_path):
 
 def generate_meme_dict(resource_path):
     files = []
-    for file in os.listdir(resource_path + "\MemeLibrary"):
+    for file in os.listdir(resource_path + "/MemeLibrary"):
         if file.endswith(".JSON"):
             files.append(file)
     return parse_memelib_json(json_to_dict(files, resource_path), resource_path)

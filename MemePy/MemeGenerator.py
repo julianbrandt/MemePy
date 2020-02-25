@@ -21,7 +21,7 @@ def get_meme_image_bytes(template, args):
 
 
 def save_meme_to_disk(template, path, args):
-    MemeFactory.factory_from_template(template, args).output_image.save(path + "\meme.png")
+    MemeFactory.factory_from_template(template, args).output_image.save(path + "/meme.png")
     return "Image saved to " + path
 
 
