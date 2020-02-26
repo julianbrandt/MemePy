@@ -13,6 +13,7 @@ def main(args):
     if len(args) <= 2:
         h()
     try:
+        print("running newest version")
         args = args[1:]
         template = args[0]
         path = args[1]

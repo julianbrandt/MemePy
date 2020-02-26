@@ -156,6 +156,7 @@ class MemeFactory:
 
 
     def extract_options(self, args):
+        args = list(args)
         options = []
         for i in range(len(args)):
             for o in MemeOptions:
