@@ -182,5 +182,45 @@
         "optional": "True"
       }
     ]
+  },
+  "Milk": {
+    "filename": "milking.jpg",
+    "text_zones": [
+      {
+        "pos": [358, 184],
+        "dimensions": [342, 116],
+        "font": "impact.ttf",
+        "font_size": 72,
+        "centering": ["True", "True"]
+      },
+      {
+        "pos": [951, 456],
+        "dimensions": [471, 334],
+        "font": "impact.ttf",
+        "font_size": 72,
+        "centering": ["True", "True"],
+        "optional": "True"
+      }
+    ]
+  },
+  "Finally": {
+    "filename": "finally.jpg",
+    "text_zones": [
+      {
+        "pos": [1, 580],
+        "dimensions": [1069, 139],
+        "font": "impact.ttf",
+        "font_size": 96,
+        "centering": ["True", "True"]
+      },
+      {
+        "pos": [391, 328],
+        "dimensions": [396, 176],
+        "font": "impact.ttf",
+        "font_size": 72,
+        "centering": ["True", "True"],
+        "optional": "True"
+      }
+    ]
   }
 }
