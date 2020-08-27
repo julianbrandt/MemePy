@@ -11,12 +11,12 @@ MemePy has a list of defined `MemeImage` templates that are fed to a `MemeFactor
 
 In addition to just text-based memes, MemePy also supports substituting the text-argument with an image. Just supply an image-link in `< ... >` angle brackets as an argument, and the text will be substituted for the image. ENDLESS POTENTIAL!!!
 
-The available meme templates can be found in the [Image Library](Resources/ImageLibrary). The specifications of each meme template can be found in the [Meme Library](Resources/MemeLibrary). Where `builtin.JSON` is the place for default templates. You can define your own templates as well, which is described below.
+The available meme templates can be found in the [Image Library](./MemePy/Resources/ImageLibrary). The specifications of each meme template can be found in the [Meme Library](./MemePy/Resources/MemeLibrary). Where `builtin.JSON` is the place for default templates. You can define your own templates as well, which is described below.
 
 ## Usage
 ### Importing MemePy into your own project
 
-If you wish to import the meme-generation functionality into your own project, usually all you will need can be found in [MemePy/MemeGenerator.py](MemePy/MemeGenerator.py). 
+If you wish to import the meme-generation functionality into your own project, usually all you will need can be found in [MemePy/MemeGenerator.py](./MemePy/MemeGenerator.py). 
 
 #### The functions available in this file are:
 
