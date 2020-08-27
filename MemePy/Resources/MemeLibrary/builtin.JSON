@@ -222,5 +222,24 @@
         "optional": "True"
       }
     ]
+  },
+  "Cliff": {
+    "filename": "cliff.jpg",
+    "text_zones": [
+      {
+        "pos": [46, 30],
+        "dimensions": [126, 50],
+        "font": "arial.ttf",
+        "font_size": 24,
+        "centering": ["True", "True"]
+      },
+      {
+        "pos": [272, 41],
+        "dimensions": [122, 77],
+        "font": "arial.ttf",
+        "font_size": 24,
+        "centering": ["True", "True"]
+      }
+    ]
   }
 }
