@@ -1,0 +1,1 @@
+py -c "import BuildDoc; BuildDoc.build_docs()"
