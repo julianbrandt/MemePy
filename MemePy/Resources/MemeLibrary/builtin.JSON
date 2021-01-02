@@ -241,5 +241,34 @@
         "centering": ["True", "True"]
       }
     ]
+  },
+  "PredatorHandshake": {
+    "filename": "handshake.gif",
+    "text_zones": [
+      {
+        "pos": [10, 140],
+        "dimensions": [160, 100],
+        "font": "impact.ttf",
+        "font_size": 72,
+        "centering": ["True", "False"],
+        "text_color": [255, 255, 255]
+      },
+      {
+        "pos": [225, 140],
+        "dimensions": [175, 100],
+        "font": "impact.ttf",
+        "font_size": 72,
+        "centering": ["True", "False"],
+        "text_color": [255, 255, 255]
+      },
+      {
+        "pos": [145, 40],
+        "dimensions": [100, 70],
+        "font": "impact.ttf",
+        "font_size": 48,
+        "centering": ["True", "True"],
+        "text_color": [255, 255, 255]
+      }
+    ]
   }
 }

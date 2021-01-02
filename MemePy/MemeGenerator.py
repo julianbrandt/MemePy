@@ -14,15 +14,24 @@ def get_meme_image(template, args):
 
 def get_meme_image_bytes(template, args):
     image_bytes = BytesIO()
-    meme = MemeFactory.factory_from_template(template, args)
-    meme.output_image.save(image_bytes, format="PNG")
+    meme_img = MemeFactory.factory_from_template(template, args).output_image
+    if meme_img.is_animated:
+        frames = []
+        for i in range(0, meme_img.n_frames):
+            meme_img.seek(i)
+            frames.append(meme_img.copy())
+        frames[0].save(image_bytes, format="GIF", save_all=True, append_images=frames[1:], duration=meme_img.info['duration'], loop=0)
+    else:
+        meme_img.save(image_bytes, format="PNG")
     image_bytes.seek(0)
     return image_bytes
 
 
 def save_meme_to_disk(template, path, args):
-    MemeFactory.factory_from_template(template, args).output_image.save(path + "/meme.png")
-    return "Image saved to " + path
+    image_bytes = get_meme_image_bytes(template, args)
+    with open(path + "/meme.png", "wb") as f:
+        f.write(image_bytes.getbuffer())
+        return "Image saved to " + path
 
 
 def add_external_resource_dir(resource_path):
