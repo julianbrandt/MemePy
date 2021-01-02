@@ -11,10 +11,13 @@ def resize_images(memes):
     for m in memes:
        try:
             img = Image.open(memes[m].image_file_path)
+            if img.mode != 'RGB':
+                img = img.convert('RGB')
             img.thumbnail((max_size, max_size), Image.ANTIALIAS)
             img.save("./Docs/Img/" + m + ".jpg")
-       except:
+       except Exception as e:
             print("Failed to resize image: " + memes[m].image_file_path)
+            print(e)
 
 
 def build_thumbnails():
