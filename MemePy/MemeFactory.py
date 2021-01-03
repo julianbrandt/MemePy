@@ -110,7 +110,7 @@ class MemeFactory:
 
 
     def apply_modification(self):
-        if not self.output_image.is_animated:
+        if not hasattr(self.output_image, "is_animated") or not self.output_image.is_animated:
             self.apply_modification_img(self.output_image)
         else:
             out_frames = []
