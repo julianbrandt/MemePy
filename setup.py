@@ -5,12 +5,12 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name="MemePy",
-    version="1.1.5",
+    version="1.2",
     description="Meme Generator for python",
     long_description=readme,
     long_description_content_type="text/markdown",
     author="Julian Brandt",
-    author_email='julianbrrandt@gmail.com',
+    author_email='julian@julianbrandt.dk',
     url="https://github.com/julianbrandt/MemePy",
     packages=["MemePy"],
     package_data={"MemePy": ["Resources/*/*"]},

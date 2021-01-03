@@ -4,6 +4,16 @@
 
 Python meme generator originally made for the discord-chat-bot [HydroBot](https://github.com/julianbrandt/Hydrobot3), but migrated to its own package for increased modularity and ease of use.
 
+## Installation
+
+MemePy can be downloaded as a package from `PyPi`:
+
+```
+>python -m pip install MemePy
+```
+
+You can alternatively just download the zip from here.
+
 ## How it works
 
 MemePy uses the Python Imaging Library *PIL* to edit existing templates of memes and return them to the user.
