@@ -93,3 +93,4 @@ MemePy <path> <template> <*args> <*options>
 | Milk | **Required**: 1<br>**Optional**: 1 | ![Milk](./Docs/Img/Milk.jpg) |
 | Finally | **Required**: 1<br>**Optional**: 1 | ![Finally](./Docs/Img/Finally.jpg) |
 | Cliff | **Required**: 2<br>**Optional**: 0 | ![Cliff](./Docs/Img/Cliff.jpg) |
+| PredatorHandshake | **Required**: 3<br>**Optional**: 0 | ![PredatorHandshake](./Docs/Img/PredatorHandshake.jpg) |

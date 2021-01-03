@@ -3,7 +3,7 @@ from enum import Enum
 from io import BytesIO
 
 import requests
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageSequence
 
 from .MemeLibJsonDecoder import generate_standard_meme_dict
 from .MemeModel import MemeImage
@@ -110,7 +110,29 @@ class MemeFactory:
 
 
     def apply_modification(self):
-        drawer = ImageDraw.Draw(self.output_image)
+        if not self.output_image.is_animated:
+            self.apply_modification_img(self.output_image)
+        else:
+            out_frames = []
+            for frame in ImageSequence.Iterator(self.output_image):
+                frame = frame.convert('RGBA')
+                self.apply_modification_img(frame)
+                out_frames.append(frame)
+            # PIL doesn't seem to let you edit gifs in-place, so we have to break the image out into individual
+            # frames, grab the image for the first frame and re-append the rest of the frames when saving it
+            gif_bytes = BytesIO()
+            duration = self.output_image.info['duration']
+            out_frames[0].save(gif_bytes,
+                format='GIF',
+                save_all=True,
+                append_images=out_frames[1:],
+                duration=duration,
+                loop=0)
+            self.output_image = Image.open(gif_bytes)
+
+
+    def apply_modification_img(self, image):
+        drawer = ImageDraw.Draw(image)
         for i in range(len(self.meme_image.text_zones)):
             if i == len(self.texts):
                 break
