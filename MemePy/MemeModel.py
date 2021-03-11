@@ -1,11 +1,12 @@
 class TextZone:
-    def __init__(self, pos, dimensions, font, angle=0, text_color=(0,0,0), centering=(False, False), optional=False):
+    def __init__(self, pos, dimensions, font, angle=0, text_color=(0,0,0), centering=(False, False), outline=False, optional=False):
         self.pos = pos
         self.dimensions = dimensions
         self.font = font
         self.angle = angle
         self.text_color = text_color
         self.centering = centering
+        self.outline = outline
         self.optional = optional
 
 class MemeImage:
