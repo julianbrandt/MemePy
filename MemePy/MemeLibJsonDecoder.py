@@ -50,6 +50,8 @@ def parse_text_zone_json(source, resource_path):
             zone.centering = (str2bool(a[0]), str2bool(a[1]))
         elif opt == "optional":
             zone.optional = str2bool(a)
+        elif opt == "outline":
+            zone.outline = str2bool(a)
     return zone
 
 

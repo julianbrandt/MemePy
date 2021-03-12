@@ -205,6 +205,13 @@ class MemeFactory:
             text_zone.pos[0] + margins[0],
             text_zone.pos[1] + margins[1]
         )
+
+        if text_zone.outline:
+            drawer.text((pos[0]-1, pos[1]), split_line(text, text_zone.font, text_zone.dimensions[0]), font=text_zone.font, fill=(0,0,0))
+            drawer.text((pos[0]+1, pos[1]), split_line(text, text_zone.font, text_zone.dimensions[0]), font=text_zone.font, fill=(0,0,0))
+            drawer.text((pos[0], pos[1]-1), split_line(text, text_zone.font, text_zone.dimensions[0]), font=text_zone.font, fill=(0,0,0))
+            drawer.text((pos[0], pos[1]+1), split_line(text, text_zone.font, text_zone.dimensions[0]), font=text_zone.font, fill=(0,0,0))
+
         drawer.text(
             pos,
             split_line(text, text_zone.font, text_zone.dimensions[0]),
