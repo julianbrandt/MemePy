@@ -270,5 +270,60 @@
         "text_color": [255, 255, 255]
       }
     ]
+  },
+  "Knight": {
+    "filename": "knight.png",
+    "text_zones": [
+      {
+        "pos": [350, 400],
+        "dimensions": [350, 180],
+        "font": "arial.ttf",
+        "font_size": 56,
+		"text_color": [255, 255, 255],
+        "centering": ["true", "true"],
+		"outline": "True"
+		},
+      {
+        "pos": [400, 900],
+        "dimensions": [300, 200],
+        "font": "arial.ttf",
+        "font_size": 56,
+        "centering": ["True", "True"],
+        "text_color": [255, 255, 255],
+		"outline": "True",
+		"angle": 17
+      }
+    ]
+  },
+  "Vape": {
+	"filename": "vape.png",
+	  "text_zones": [
+      {
+        "pos": [455, 0],
+        "dimensions": [382, 256],
+        "font": "arial.ttf",
+        "font_size": 56,
+        "centering": ["True", "True"]
+	  },
+      {
+        "pos": [455, 262],
+        "dimensions": [382, 256],
+        "font": "arial.ttf",
+        "font_size": 56,
+        "centering": ["True", "True"]
+      }
+    ]
+  },
+  "Hate": {
+	"filename": "hate.png",
+	  "text_zones": [
+      {
+        "pos": [10, 335],
+        "dimensions": [335, 90],
+        "font": "arial.ttf",
+        "font_size": 36,
+        "centering": ["True", "True"]
+	  }
+    ]
   }
 }
