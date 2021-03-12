@@ -15,3 +15,6 @@
 | Finally | **Required**: 1<br>**Optional**: 1 | ![Finally](./Docs/Img/Finally.jpg) |
 | Cliff | **Required**: 2<br>**Optional**: 0 | ![Cliff](./Docs/Img/Cliff.jpg) |
 | PredatorHandshake | **Required**: 3<br>**Optional**: 0 | ![PredatorHandshake](./Docs/Img/PredatorHandshake.jpg) |
+| Knight | **Required**: 2<br>**Optional**: 0 | ![Knight](./Docs/Img/Knight.jpg) |
+| Vape | **Required**: 2<br>**Optional**: 0 | ![Vape](./Docs/Img/Vape.jpg) |
+| Hate | **Required**: 1<br>**Optional**: 0 | ![Hate](./Docs/Img/Hate.jpg) |
