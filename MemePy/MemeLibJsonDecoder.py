@@ -70,7 +70,7 @@ def json_to_dict(files, resource_path):
 def generate_meme_dict(resource_path):
     files = []
     for file in os.listdir(resource_path + "/MemeLibrary"):
-        if file.endswith(".JSON"):
+        if file.upper().endswith(".JSON"):
             files.append(file)
     return parse_memelib_json(json_to_dict(files, resource_path), resource_path)
 
