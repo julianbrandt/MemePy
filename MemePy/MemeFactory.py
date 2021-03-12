@@ -63,7 +63,7 @@ class MemeOptions(Enum):
 
 class MemeFactory:
     def __init__(self, meme_image:MemeImage, args):
-        self.extract_options(args)
+        self.extract_args(args)
         self.meme_image = meme_image
         self.output_image = Image.open(meme_image.image_file_path)
         self.initial_dimensions = self.output_image.size
@@ -164,8 +164,8 @@ class MemeFactory:
         img = self.resize_image(img, text_zone.dimensions)
         margins = get_centered_image_margins(img.size, text_zone.dimensions)
         pos = (
-            text_zone.pos[0] + margins[0],
-            text_zone.pos[1] + margins[1]
+            text_zone.pos[0] + (margins[0] * text_zone.centering[0]),
+            text_zone.pos[1] + (margins[1] * text_zone.centering[1])
         )
         self.output_image.paste(img, pos)
 
@@ -177,16 +177,20 @@ class MemeFactory:
         return img.resize(resize_dimensions, Image.ANTIALIAS)
 
 
-    def extract_options(self, args):
-        args = list(args)
+    def extract_args(self, args):
+        if type(args) is str:
+            args = [args]
+        else:
+            args = list(args)
         options = []
         for i in range(len(args)):
             for o in MemeOptions:
                 if "{" + o.name.lower() + "}" == args[i].lower():
                     options.append(o)
-                    args[i] = ""
+        for o in options:
+            args.remove("{" + o.name.lower() + "}")
         self.options = options
-        self.texts:str = list(filter("".__ne__, args))
+        self.texts = args
 
 
     @staticmethod
