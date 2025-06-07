@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name="MemePy",
-    version="1.2.1",
+    version="1.2.2",
     description="Meme Generator for python",
     long_description=readme,
     long_description_content_type="text/markdown",
@@ -16,8 +16,8 @@ setuptools.setup(
     package_data={"MemePy": ["Resources/*/*"]},
     license="MIT",
     install_requires=[
-        "pillow",
-        "requests"
+        "pillow~=8.4",
+        "requests~=2.32"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",

@@ -6,6 +6,9 @@ Python meme generator originally made for the discord-chat-bot [HydroBot](https:
 
 ## Installation
 
+**IMPORTANT**
+The current version of MemePy relies on an older version of pillow (8.4.0). Pip might want to build this from source. In the case that the installation of pillow fails because of missing system libraries such as libjpeg, install the libraries and then install pillow 8.4.0 manually with `python -m pip install pillow==8.4.0`. These libraries should however be preinstalled on most systems.
+
 MemePy can be downloaded as a package from `PyPi`:
 
 ```
