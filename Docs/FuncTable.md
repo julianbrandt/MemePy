@@ -18,3 +18,9 @@
 | Knight | **Required**: 2<br>**Optional**: 0 | ![Knight](./Docs/Img/Knight.jpg) |
 | Vape | **Required**: 2<br>**Optional**: 0 | ![Vape](./Docs/Img/Vape.jpg) |
 | Hate | **Required**: 1<br>**Optional**: 0 | ![Hate](./Docs/Img/Hate.jpg) |
+| BellCurve | **Required**: 3<br>**Optional**: 0 | ![BellCurve](./Docs/Img/BellCurve.jpg) |
+| Trump | **Required**: 1<br>**Optional**: 0 | ![Trump](./Docs/Img/Trump.jpg) |
+| LookUp | **Required**: 1<br>**Optional**: 0 | ![LookUp](./Docs/Img/LookUp.jpg) |
+| TradeOffer | **Required**: 2<br>**Optional**: 1 | ![TradeOffer](./Docs/Img/TradeOffer.jpg) |
+| ButGodSaid | **Required**: 2<br>**Optional**: 0 | ![ButGodSaid](./Docs/Img/ButGodSaid.jpg) |
+| YesHoney | **Required**: 1<br>**Optional**: 0 | ![YesHoney](./Docs/Img/YesHoney.jpg) |
