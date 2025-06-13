@@ -349,7 +349,7 @@
 		"font": "arial.ttf",
 		"font_size": 42,
 		"centering": ["True", "True"]
-	  },
+	  }
     ]
   },
   "Trump": {
@@ -361,7 +361,7 @@
 		"font": "arial.ttf",
 		"font_size": 36,
 		"centering": ["True", "True"],
-		"angle": 10
+		"angle": 5
 	  }
 	]
   },
@@ -378,11 +378,20 @@
 	]
   },
   "TradeOffer": {
-	"filename": "tradeoffer.gif",
+	"filename": "tradeoffer.jpg",
 	"text_zones": [
 	  {
-	    "pos": [12, 205],
-		"dimensions": [156, 108],
+	    "pos": [12, 183],
+		"dimensions": [260, 150],
+		"font": "arial.ttf",
+		"font_size": 32,
+		"centering": ["True", "False"],
+		"text_color": [255, 255, 255],
+		"outline": "True"
+	  },
+	  {
+	    "pos": [326, 183],
+		"dimensions": [260, 150],
 		"font": "arial.ttf",
 		"font_size": 28,
 		"centering": ["True", "False"],
@@ -390,17 +399,8 @@
 		"outline": "True"
 	  },
 	  {
-	    "pos": [218, 205],
-		"dimensions": [156, 108],
-		"font": "arial.ttf",
-		"font_size": 28,
-		"centering": ["True", "False"],
-		"text_color": [255, 255, 255],
-		"outline": "True"
-	  },
-	  {
-	    "pos": [53, 494],
-		"dimensions": [275, 150],
+	    "pos": [72, 614],
+		"dimensions": [453, 174],
 		"font": "arial.ttf",
 		"font_size": 28,
 		"centering": ["True", "False"],
