@@ -297,26 +297,26 @@
   },
   "Vape": {
 	"filename": "vape.png",
-	  "text_zones": [
-      {
-        "pos": [455, 0],
-        "dimensions": [382, 256],
-        "font": "arial.ttf",
-        "font_size": 56,
-        "centering": ["True", "True"]
+	 "text_zones": [
+	  {
+		"pos": [455, 0],
+		"dimensions": [382, 256],
+		"font": "arial.ttf",
+		"font_size": 56,
+		"centering": ["True", "True"]
 	  },
-      {
-        "pos": [455, 262],
-        "dimensions": [382, 256],
-        "font": "arial.ttf",
-        "font_size": 56,
-        "centering": ["True", "True"]
-      }
+	  {
+		"pos": [455, 262],
+		"dimensions": [382, 256],
+		"font": "arial.ttf",
+		"font_size": 56,
+		"centering": ["True", "True"]
+	  }
     ]
   },
   "Hate": {
 	"filename": "hate.png",
-	  "text_zones": [
+	"text_zones": [
       {
         "pos": [10, 335],
         "dimensions": [335, 90],
@@ -325,5 +325,120 @@
         "centering": ["True", "True"]
 	  }
     ]
+  },
+  "BellCurve": {
+    "filename": "bellcurve.jpg",
+	"text_zones": [
+	  {
+		"pos": [21, 378],
+		"dimensions": [496, 166],
+		"font": "arial.ttf",
+		"font_size": 42,
+		"centering": ["True", "True"]
+	  },
+	  {
+		"pos": [320, 16],
+		"dimensions": [680, 126],
+		"font": "arial.ttf",
+		"font_size": 42,
+		"centering": ["True", "True"]
+	  },
+	  {
+		"pos": [894, 291],
+		"dimensions": [496, 166],
+		"font": "arial.ttf",
+		"font_size": 42,
+		"centering": ["True", "True"]
+	  },
+    ]
+  },
+  "Trump": {
+    "filename": "trump.jpg",
+	"text_zones": [
+	  {
+	    "pos": [347, 274],
+		"dimensions": [280, 233],
+		"font": "arial.ttf",
+		"font_size": 36,
+		"centering": ["True", "True"],
+		"angle": 10
+	  }
+	]
+  },
+  "LookUp": {
+	"filename": "lookup.gif",
+	"text_zones": [
+	  {
+		"pos": [8, 8],
+		"dimensions": [468, 73],
+		"font": "arial.ttf",
+		"font_size": 28,
+		"centering": ["False", "True"]
+	  }
+	]
+  },
+  "TradeOffer": {
+	"filename": "tradeoffer.gif",
+	"text_zones": [
+	  {
+	    "pos": [12, 205],
+		"dimensions": [156, 108],
+		"font": "arial.ttf",
+		"font_size": 28,
+		"centering": ["True", "False"],
+		"text_color": [255, 255, 255],
+		"outline": "True"
+	  },
+	  {
+	    "pos": [218, 205],
+		"dimensions": [156, 108],
+		"font": "arial.ttf",
+		"font_size": 28,
+		"centering": ["True", "False"],
+		"text_color": [255, 255, 255],
+		"outline": "True"
+	  },
+	  {
+	    "pos": [53, 494],
+		"dimensions": [275, 150],
+		"font": "arial.ttf",
+		"font_size": 28,
+		"centering": ["True", "False"],
+		"text_color": [255, 255, 255],
+		"outline": "True",
+		"optional": "True"
+	  }
+	]
+  },
+  "ButGodSaid": {
+    "filename": "butgodsaid.jpg",
+	"text_zones": [
+	  {
+		"pos": [485, 0],
+		"dimensions": [490, 474],
+		"font": "arial.ttf",
+		"font_size": 48,
+		"centering": ["True", "True"]
+	  },
+	  {
+		"pos": [485, 475],
+		"dimensions": [490, 490],
+		"font": "arial.ttf",
+		"font_size": 48,
+		"centering": ["True", "True"]
+	  }
+	]
+  },
+  "YesHoney": {
+	"filename": "yeshoney.jpg",
+	"text_zones": [
+	  {
+		"pos": [93, 528],
+		"dimensions": [603, 204],
+		"font": "arial.ttf",
+		"font_size": 92,
+		"centering": ["True", "True"]
+	  }
+	]
   }
 }
