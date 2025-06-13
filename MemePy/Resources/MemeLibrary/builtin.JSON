@@ -436,7 +436,7 @@
 		"pos": [93, 528],
 		"dimensions": [603, 204],
 		"font": "arial.ttf",
-		"font_size": 92,
+		"font_size": 76,
 		"centering": ["True", "True"]
 	  }
 	]
