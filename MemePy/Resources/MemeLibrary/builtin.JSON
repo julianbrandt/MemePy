@@ -356,12 +356,12 @@
     "filename": "trump.jpg",
 	"text_zones": [
 	  {
-	    "pos": [347, 274],
-		"dimensions": [280, 233],
+	    "pos": [369, 274],
+		"dimensions": [261, 233],
 		"font": "arial.ttf",
 		"font_size": 36,
 		"centering": ["True", "True"],
-		"angle": 5
+		"angle": 2
 	  }
 	]
   },
